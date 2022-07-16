@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+    
+       li {float:left;
+        color:black;
+
+    }
+.content {
+    position: absolute;
+  top: 150px;
+  left: 50px;
+  color:aliceblue;
+  font-size: 20px;
+}
+hr{
+    display: none;
+}
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+
+
+.menu-left{
+    padding-left: 40px;
+}
+.menu-right{
+    padding-right: 40px;
+}
+.menu-left ul, .menu-right ul{
+    align-items: center;
+    margin: unset;
+    list-style-type: none;
+    padding-left: 0;
+}
+.menu-right ul{
+    justify-content: flex-end;
+}
+.menu-left ul li, .menu-right ul li{
+    padding: 16px 10px;
+}
+.menu-left ul li a, .menu-right ul li a{
+    color: gray;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.column{
+    width: 33.33%;
+    padding: 0px 20px;
+}
+.column img{
+    width: 100%;
+    padding: 20px 0px;
+}
+#main, #footer{
+    padding: 0px 30px;
+}
+.head-content{
+    padding: 20px 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .menu{
+        background-color: #556270;
+    }
+    .menu-left ul li a, .menu-right ul li a{
+        color: white;
+    }
+    #banner img{
+        display: none;
+    }
+    .content{
+        position: unset;
+        color: black;
+        padding: 20px 50px;
+    }
+    hr{
+        display: block;
+        margin: 0px 50px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .menu-left{
+        width: auto;
+        padding-left: 5px;
+    }
+    .menu-right{
+        width: auto;
+        padding-right: 5px;
+    }
+    .menu{
+        background-color: #556270;
+    }
+    .menu-left ul li a, .menu-right ul li a{
+        color: white;
+        font-size: 16px;
+    }
+    #main, #footer{
+        padding: 15px;
+    }
+    .column{
+        padding: 0px;
+    }
+    .head-content{
+        padding: 15px;
+    }
+    #banner img{
+        display: none;
+    }
+    .content{
+        position: unset;
+        color: black;
+        padding: 15px;
+    }
+    hr{
+        display: block;
+        margin: 0px 15px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    /* For mobile: */
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+ 
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+    <div class="menu row">
+        <div class="menu-left col-6 col-s-6">
+            <ul class="row">
+                <li>
+                    <a href="#">Brand</a>
+                </li>
+                <li>
+                    <a href="#">Browse</a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-right col-6 col-s-6">
+            <ul class="row">
+                <li>
+                    <a href="#">Sign up</a>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+                <li>
+                    <a href="#">Help</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="banner">
+        <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png" width="100%" height="600px">
+        <div class="content">
+            <h1>Find a place to stay.</h1>  
+             <p>Rent from people in over 34,000cities and 192 countries.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="head-content">
+        <h2>Neighborhood Guides</h2>
+        <p>Not sure where to stay? We've created neighborhood guides for cities all around the world.</p>
+    </div>
+   
+
+<div id="main" class="row"> 
+ <div class="col-4 col-s-6 col-sm-12 column">
+   <img src='https://s3.amazonaws.com/codecademy-content/courses/ltp/img/mexico-city.png' ><br>
+   <img src='https://s3.amazonaws.com/codecademy-content/courses/ltp/img/ny.png' ><br>
+</div>
+<div class="col-4 col-s-6 col-sm-12 column">
+   <img src='https://s3.amazonaws.com/codecademy-content/courses/ltp/img/tokyo.png'><br>           
+   <img src='https://s3.amazonaws.com/codecademy-content/courses/ltp/img/paris.png'><br>
+</div>
+<div class="col-4 col-s-6 col-sm-12 column">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/invite.png"><br>
+</div>
+</div>
+
+<div id="footer" class="row">
+
+   <div class="col-4 col-s-12 col-sm-12 column">
+       <h3>Travel</h3>
+   <p>From apartments and rooms to treehouses and boats: stay in unique spaces in 192 countries.</p><br>
+   <a href="#">See how to travel on Airbnb</a></div>
+
+   <div class="col-4 col-s-12 col-sm-12 column">
+       <h3>Host</h3>
+   <p>Renting out your unused space could pay your bills or fund your next vacation.</p><br>
+   <a href="#">Learn more about hosting</a></div>
+   
+   <div class="col-4 col-s-12 col-sm-12 column">
+       <h3>Trust and Safety</h3>
+   <p>From Verified ID to your worldwide customer support team, we've got your back.</p><br>
+   <a href="#">Learn about trust at Airbnb</a></div>
+</div>
+
+</body>
+</html>
