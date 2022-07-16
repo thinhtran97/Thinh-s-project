@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>binhdinhtourism</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+    
+       li {float:left;
+        color:black;
+
+    }
+.content {
+    position: absolute;
+  top: 150px;
+  left: 50px;
+  color:rgb(69, 14, 197);
+  font-size: 20px;
+}
+hr{
+    display: none;
+}
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+
+
+.menu-left{
+    padding-left: 40px;
+}
+.menu-right{
+    padding-right: 40px;
+}
+.menu-left ul, .menu-right ul{
+    align-items: center;
+    margin: unset;
+    list-style-type: none;
+    padding-left: 0;
+}
+.menu-right ul{
+    justify-content: flex-end;
+}
+.menu-left ul li, .menu-right ul li{
+    padding: 16px 10px;
+}
+.menu-left ul li a, .menu-right ul li a{
+    color: gray;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.column{
+    width: 33.33%;
+    padding: 0px 20px;
+}
+.column img{
+    width: 100%;
+    padding: 20px 0px;
+}
+#main, #footer{
+    padding: 0px 30px;
+}
+.head-content{
+    padding: 20px 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .menu{
+        background-color: #556270;
+    }
+    .menu-left ul li a, .menu-right ul li a{
+        color: white;
+    }
+    #banner img{
+        display: none;
+    }
+    .content{
+        position: unset;
+        color: black;
+        padding: 20px 50px;
+    }
+    hr{
+        display: block;
+        margin: 0px 50px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .menu-left{
+        width: auto;
+        padding-left: 5px;
+    }
+    .menu-right{
+        width: auto;
+        padding-right: 5px;
+    }
+    .menu{
+        background-color: #556270;
+    }
+    .menu-left ul li a, .menu-right ul li a{
+        color: white;
+        font-size: 16px;
+    }
+    #main, #footer{
+        padding: 15px;
+    }
+    .column{
+        padding: 0px;
+    }
+    .head-content{
+        padding: 15px;
+    }
+    #banner img{
+        display: none;
+    }
+    .content{
+        position: unset;
+        color: black;
+        padding: 15px;
+    }
+    hr{
+        display: block;
+        margin: 0px 15px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    /* For mobile: */
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+ 
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+    <div class="menu row">
+        <div class="menu-left col-6 col-s-6">
+            <ul class="row">
+                <li>
+                    <a href="./DanhLam.html">Danh Lam</a>
+                </li>
+                <li>
+                    <a href="./LeHoi.html">Lễ Hội</a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-right col-6 col-s-6">
+            <ul class="row">
+                <li>
+                    <a href="./VanHoa.html">Văn Hoá</a>
+                </li>
+                <li>
+                    <a href="./Lichsu.html">Lịch sử</a>
+                </li>
+                <li>
+                    <a href="./ConNguoi.html">Con Người</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="banner">
+        <img src="https://media.travel.com.vn/Time/GroupDiscovery/large/gd_151113_kinh-nghiem-du-lich-binh-dinh.jpg" width="100%" height="600px">
+        <div class="content">
+            <h1>Du Lịch Bình Định.</h1>  
+             <p>Thành phố du lịch sạch Asean 2020.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="head-content">
+        <h2>ĐỊA ĐIỂM DU LỊCH NỔI BẬT</h2>
+        <p>Những gợi ý nổi bật cho quý khách tham khảo.</p>
+   
+
+<div id="main" class="row"> 
+ <div class="col-4 col-s-6 col-sm-12 column">
+   <img src='https://quynhonme.vn/wp-content/uploads/2020/02/di-den-thap-doi.jpg' height="255">Tháp Đôi<br>
+</div>
+<div class="col-4 col-s-6 col-sm-12 column">
+    <img src='https://statics.vntrip.vn/data-v2/data-guide/img_content/1472611901_eo-gio-binh-dinh.jpg' >Eo Gió<br>
+</div>
+<div class="col-4 col-s-6 col-sm-12 column">
+    <img src='https://statics.vntrip.vn/data-v2/data-guide/img_content/1472613112_ham-ho-1.jpg' height="255">Thắng Cảnh Hầm Hô<br> 
+</div>
+</div>
+
+<div id="footer" class="row">
+
+    <div class="col-4 col-s-12 col-sm-12 column">
+        <h3>RESORT</h3>
+    <p>Hệ thống Resort tại Quy Nhơn.</p><br>
+    <a href="https://www.agoda.com/vi-vn/pages/agoda/default/DestinationSearchResult.aspx?city=17242&site_id=1891453&tag=4f05291a-566a-4269-ab95-627556cf5a2e">See how to travel on Agoda</a></div>
+ 
+    <div class="col-4 col-s-12 col-sm-12 column">
+        <h3>Hotel</h3>
+    <p>Các khách sạn 5 sao tại Quy Nhơn.</p><br>
+    <a href="https://www.trivago.vn/vi/lm?__wr=21&tc=18&themeId=28&sem_keyword=quy%20nh%C6%A1n%205%20sao&sem_creativeid=338760200077&sem_matchtype=p&sem_network=g&sem_device=c&sem_placement=&sem_target=&sem_adposition=&sem_param1=&sem_param2=&sem_campaignid=235041050&sem_adgroupid=15361793090&sem_targetid=kwd-1384991269900&sem_location=9040360&cipc=sem&cip=8419001285&gclid=CjwKCAjwrfCRBhAXEiwAnkmKmVeOuyGHyIItb9zf-ztuxCHOikgRElpoXwK3LcJdNjyV_UZwjfQs0hoCB2wQAvD_BwE&search=200-68080">Learn more about Hotel</a></div>
+    
+    <div class="col-4 col-s-12 col-sm-12 column">
+        <h3>Tin cậy và An toàn</h3>
+    <p>Hỗ trợ khách hàng trên toàn thế giới của bạn.</p><br>
+    <a href="#">Learn about trust at Agoda</a></div>
+ </div>
+ 
+</body>
+</html>
